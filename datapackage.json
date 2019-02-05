@@ -1,8 +1,8 @@
 {
-  "bytes": 1671,
-  "count_of_rows": 1,
-  "hash": "f4f9464a666efed8ac86dd46ef60a01b",
-  "name": "london-population",
+  "bytes": 6086,
+  "count_of_rows": 16,
+  "hash": "8af121d18f219db6b64101740f0e46d4",
+  "name": "population",
   "profile": "data-package",
   "resources": [
     {
@@ -18,31 +18,11 @@
       "encoding": "utf-8",
       "format": "csv",
       "mediatype": "text/xls",
-      "name": "london-population",
+      "name": "population",
       "path": "data/population.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
-          {
-            "format": "default",
-            "name": "Code",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "New Code",
-            "type": "string"
-          },
-          {
-            "format": "default",
-            "name": "Area name",
-            "type": "string"
-          },
-          {
-            "format": "default",
-            "name": "Inner or Outer London",
-            "type": "string"
-          },
           {
             "format": "default",
             "name": "PERSONS ALL AGES 1961",
@@ -240,93 +220,13 @@
           },
           {
             "format": "default",
-            "name": "PERSONS ALL AGES 2000",
-            "type": "any"
+            "name": "Year",
+            "type": "year"
           },
           {
             "format": "default",
-            "name": "PERSONS ALL AGES 2001",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2002",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2003",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2004",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2005",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2006",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2007",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "PERSONS ALL AGES 2008",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2009",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2010",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2011",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2012",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2013",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2014",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "2015",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "Area (hectares)",
-            "type": "any"
-          },
-          {
-            "format": "default",
-            "name": "LAND AREA (Sq Km)",
-            "type": "any"
+            "name": "Value",
+            "type": "integer"
           }
         ],
         "missingValues": [
