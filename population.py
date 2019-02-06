@@ -4,10 +4,10 @@ from dataflows import Flow, load, dump_to_path, PackageWrapper, ResourceWrapper,
 
 def set_format_and_name(package: PackageWrapper):
     package.pkg.descriptor['title'] = 'London population'
-    package.pkg.descriptor['name'] = 'london-population'
+    package.pkg.descriptor['name'] = 'population'
     # Change path and name for the resource:
     package.pkg.descriptor['resources'][0]['path'] = 'data/population.csv'
-    package.pkg.descriptor['resources'][0]['name'] = 'london-population'
+    package.pkg.descriptor['resources'][0]['name'] = 'population'
 
 
     yield package.pkg
@@ -25,25 +25,25 @@ def filter_population(rows):
 
 # TODO: fix unpivoting with regex.. so we can unpivot all historical data
 unpivot_fields = [
-    {'name': 'PERSONS ALL AGES 2000', 'keys': {'Year': 2000}},
-    {'name': 'PERSONS ALL AGES 2001', 'keys': {'Year': 2001}},
-    {'name': 'PERSONS ALL AGES 2002', 'keys': {'Year': 2002}},
-    {'name': 'PERSONS ALL AGES 2003', 'keys': {'Year': 2003}},
-    {'name': 'PERSONS ALL AGES 2004', 'keys': {'Year': 2004}},
-    {'name': 'PERSONS ALL AGES 2005', 'keys': {'Year': 2005}},
-    {'name': 'PERSONS ALL AGES 2006', 'keys': {'Year': 2006}},
-    {'name': 'PERSONS ALL AGES 2007', 'keys': {'Year': 2007}},
-    {'name': 'PERSONS ALL AGES 2008', 'keys': {'Year': 2008}},
-    {'name': '2009', 'keys': {'Year': 2009}},
-    {'name': '2010', 'keys': {'Year': 2010}},
-    {'name': '2011', 'keys': {'Year': 2011}},
-    {'name': '2012', 'keys': {'Year': 2012}},
-    {'name': '2013', 'keys': {'Year': 2013}},
-    {'name': '2014', 'keys': {'Year': 2014}},
-    {'name': '2015', 'keys': {'Year': 2015}},
+    {'name': 'PERSONS ALL AGES 2000', 'keys': {'Year': '2000-01-01'}},
+    {'name': 'PERSONS ALL AGES 2001', 'keys': {'Year': '2001-01-01'}},
+    {'name': 'PERSONS ALL AGES 2002', 'keys': {'Year': '2002-01-01'}},
+    {'name': 'PERSONS ALL AGES 2003', 'keys': {'Year': '2003-01-01'}},
+    {'name': 'PERSONS ALL AGES 2004', 'keys': {'Year': '2004-01-01'}},
+    {'name': 'PERSONS ALL AGES 2005', 'keys': {'Year': '2005-01-01'}},
+    {'name': 'PERSONS ALL AGES 2006', 'keys': {'Year': '2006-01-01'}},
+    {'name': 'PERSONS ALL AGES 2007', 'keys': {'Year': '2007-01-01'}},
+    {'name': 'PERSONS ALL AGES 2008', 'keys': {'Year': '2008-01-01'}},
+    {'name': '2009', 'keys': {'Year': '2009-01-01'}},
+    {'name': '2010', 'keys': {'Year': '2010-01-01'}},
+    {'name': '2011', 'keys': {'Year': '2011-01-01'}},
+    {'name': '2012', 'keys': {'Year': '2012-01-01'}},
+    {'name': '2013', 'keys': {'Year': '2013-01-01'}},
+    {'name': '2014', 'keys': {'Year': '2014-01-01'}},
+    {'name': '2015', 'keys': {'Year': '2015-01-01'}},
 ]
 extra_keys = [
-    {'name': 'Year', 'type': 'year'}
+    {'name': 'Year', 'type': 'date'}
 ]
 extra_value = {'name': 'Value', 'type': 'integer'}
 

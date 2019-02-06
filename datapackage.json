@@ -1,7 +1,7 @@
 {
-  "bytes": 6086,
+  "bytes": 6182,
   "count_of_rows": 16,
-  "hash": "8af121d18f219db6b64101740f0e46d4",
+  "hash": "ccf5ecc68c53b0c21f7fa8df4e1a01c8",
   "name": "population",
   "profile": "data-package",
   "resources": [
@@ -219,9 +219,9 @@
             "type": "any"
           },
           {
-            "format": "default",
+            "format": "%Y-%m-%d",
             "name": "Year",
-            "type": "year"
+            "type": "date"
           },
           {
             "format": "default",
