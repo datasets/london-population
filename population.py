@@ -1,14 +1,13 @@
 import datetime
 
-from dataflows import Flow, load, dump_to_path, PackageWrapper, ResourceWrapper,printer
+from dataflows import Flow, load, dump_to_path, PackageWrapper, ResourceWrapper,printer, unpivot, delete_fields
 
 def set_format_and_name(package: PackageWrapper):
     package.pkg.descriptor['title'] = 'London population'
-    package.pkg.descriptor['name'] = 'london-population'
+    package.pkg.descriptor['name'] = 'population'
     # Change path and name for the resource:
     package.pkg.descriptor['resources'][0]['path'] = 'data/population.csv'
-    package.pkg.descriptor['resources'][0]['name'] = 'london-population'
-
+    package.pkg.descriptor['resources'][0]['name'] = 'population'
 
     yield package.pkg
     res_iter = iter(package)
@@ -22,7 +21,19 @@ def filter_population(rows):
         if row['Code'] is 'H':
             yield row
 
-def london_population(link):
+
+
+unpivot_fields = [{'name': 'PERSONS ALL AGES ([0-9]{4})', 'keys': {'Year': r'\1' '-01-01'}},
+                  {'name': '([0-9]{4,5})', 'keys': {'Year':r'\1' '-01-01' }}
+                  ]
+
+extra_keys = [
+    {'name': 'Year', 'type': 'any'}
+]
+extra_value = {'name': 'Value', 'type': 'any'}
+
+
+def london_population(link, ):
     Flow(
         load(link,
              format="xls",
@@ -30,7 +41,9 @@ def london_population(link):
              fill_merged_cells=True,
              sheet=2),
         filter_population,
+        delete_fields(['Code', 'New Code', 'Area name', 'Inner or Outer London', 'Area (hectares)', 'LAND AREA (Sq Km)']),
         set_format_and_name,
+        unpivot(unpivot_fields, extra_keys, extra_value),
         dump_to_path(),
         printer(num_rows=1)
 
