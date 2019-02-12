@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "bytes": 1112,
   "count_of_rows": 55,
   "hash": "a5df9f9e48abb45a6c7aa60b9b79e0ea",
+=======
+  "bytes": 6182,
+  "count_of_rows": 16,
+  "hash": "ccf5ecc68c53b0c21f7fa8df4e1a01c8",
+>>>>>>> f19796b4602cb16d17ebe2a68298fa53cc4fb1a1
   "name": "population",
   "profile": "data-package",
   "resources": [
@@ -25,13 +31,217 @@
         "fields": [
           {
             "format": "default",
+<<<<<<< HEAD
             "name": "Year",
+=======
+            "name": "PERSONS ALL AGES 1961",
+>>>>>>> f19796b4602cb16d17ebe2a68298fa53cc4fb1a1
             "type": "any"
           },
           {
             "format": "default",
+<<<<<<< HEAD
             "name": "Value",
             "type": "any"
+=======
+            "name": "PERSONS ALL AGES 1962",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1963",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1964",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1965",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1966",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1967",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1968",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1969",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1970",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1971",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1972",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1973",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1974",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1975",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1976",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1977",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1978",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1979",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1980",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1981",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1982",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1983",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1984",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1985",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1986",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1987",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1988",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1989",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1990",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1991",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1992",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1993",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1994",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1995",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1996",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1997",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1998",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "PERSONS ALL AGES 1999",
+            "type": "any"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Year",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Value",
+            "type": "integer"
+>>>>>>> f19796b4602cb16d17ebe2a68298fa53cc4fb1a1
           }
         ],
         "missingValues": [
