@@ -1,4 +1,4 @@
-These dataset was gathered from [LondonData](https://data.london.gov.uk/) website.
+This dataset was gathered from [LondonData](https://data.london.gov.uk/) website.
 -
 The data is given inside  the data folder in population.csv file. The file consists of two columns
 year with rows 1962-2015 and value with population of the London in that respective year.
