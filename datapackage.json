@@ -1,8 +1,15 @@
 {
-  "bytes": 1112,
-  "count_of_rows": 55,
-  "hash": "a5df9f9e48abb45a6c7aa60b9b79e0ea",
-  "name": "population",
+  "bytes": 2322,
+  "count_of_rows": 105,
+  "hash": "05bf764fe43a50b638eaeb9156904d57",
+  "licenses": [
+    {
+      "name": "OGL",
+      "path": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "title": "Open Government Licence"
+    }
+  ],
+  "name": "London population",
   "profile": "data-package",
   "resources": [
     {
@@ -18,8 +25,42 @@
       "encoding": "utf-8",
       "format": "csv",
       "mediatype": "text/xls",
-      "name": "population",
-      "path": "data/population.csv",
+      "name": "london-population-history",
+      "path": "data/london-population-history.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Year",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "Value",
+            "type": "any"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/xlsx",
+      "name": "london-population-projection",
+      "path": "data/london-population-projection.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -40,5 +81,5 @@
       }
     }
   ],
-  "title": "London population"
+  "title": "london-population"
 }
