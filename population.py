@@ -1,9 +1,10 @@
 from dataflows import Flow,dump_to_path, printer, ResourceWrapper, PackageWrapper, load,unpivot, delete_fields
 
+
 def set_format_and_name_population(package: PackageWrapper):
 
-    package.pkg.descriptor['name'] = 'London population'
-    package.pkg.descriptor['title'] = 'london-population'
+    package.pkg.descriptor['name'] = 'population'
+    package.pkg.descriptor['title'] = 'London population'
 
     package.pkg.descriptor['licenses'] = [{
         "name": "OGL",
@@ -104,9 +105,21 @@ def add_sex(row):
 def add_age(row):
     row['age'] = '-1'
 
-def check_None(rows):
+def check_none(rows):
     for row in rows:
         if row['Value'] is not None:
+            yield row
+
+def check_repetition(rows):
+    myDict = {}
+    for row in rows:
+
+        year = row['Year']
+        year = year.replace('-','')
+        if year in myDict:
+            pass
+        else:
+            myDict[year] = row['Value']
             yield row
 
 
@@ -147,7 +160,8 @@ Flow(
     filter_population_projection,
     delete_fields(['gss_code','district', 'component', 'sex', 'age']),
     unpivot(unpivot_fields, extra_keys, extra_value),
-    check_None,
+    check_none,
+    check_repetition,
     set_format_and_name_population,
     dump_to_path(),
     printer()

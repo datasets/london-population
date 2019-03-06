@@ -1,7 +1,7 @@
 {
-  "bytes": 2322,
-  "count_of_rows": 105,
-  "hash": "05bf764fe43a50b638eaeb9156904d57",
+  "bytes": 2102,
+  "count_of_rows": 95,
+  "hash": "be3a762535f981e7f42432051c71e024",
   "licenses": [
     {
       "name": "OGL",
@@ -9,7 +9,7 @@
       "title": "Open Government Licence"
     }
   ],
-  "name": "London population",
+  "name": "population",
   "profile": "data-package",
   "resources": [
     {
@@ -81,5 +81,5 @@
       }
     }
   ],
-  "title": "london-population"
+  "title": "London population"
 }
