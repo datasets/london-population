@@ -1,3 +1,5 @@
+<a href="https://datahub.io/core/london-population"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+
 This dataset was scraped from [LondonData](https://data.london.gov.uk/) website.
 -
 The data is given inside  the data folder in population.csv file. The file consists of two columns
