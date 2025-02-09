@@ -7,10 +7,10 @@ year with rows 1962-2015 and value with population of the London in that respect
 
 ```
 # Install dataflows
-pip install dataflows
+pip install -r scripts/requirements.txt
 
 # Run the script
-python population.py
+python scripts/population.py
 ```
 
 ### License

@@ -30,7 +30,7 @@ def set_format_and_name_population(package: PackageWrapper):
 
 def filter_population(rows):
     for row in rows:
-        if row['Code'] is 'H':
+        if row['Code'] == 'H':
             yield row
 
 
@@ -137,7 +137,8 @@ Flow(
         format="xls",
         headers=[1, 2],
         fill_merged_cells=True,
-        sheet=2
+        sheet=2,
+        engine='openpyxl'
     ),
     filter_population,
     delete_fields(['Code','New Code', 'Area name', 'Inner or Outer London', 'Area (hectares)', 'LAND AREA (Sq Km)']),
@@ -156,7 +157,8 @@ Flow(
         format="xlsx",
         # headers=[1, 2],
         fill_merged_cells=True,
-        sheet=1),
+        sheet=1,
+        engine='openpyxl'),
     filter_population_projection,
     delete_fields(['gss_code','district', 'component', 'sex', 'age']),
     unpivot(unpivot_fields, extra_keys, extra_value),
